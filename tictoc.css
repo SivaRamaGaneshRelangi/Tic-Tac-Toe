@@ -1,0 +1,90 @@
+.tabel
+{
+    margin-top: 100px;
+    place-self: center;
+    margin-left:15px;
+}
+.cell
+{
+    height : 200px;
+    width  : 200px;
+    opacity: 0.8;
+    align-items: center;
+    justify-content: center;
+    line-height: 100px;  
+    padding: 0;
+    box-sizing: border-box;
+}
+.cell:hover
+{
+    opacity: 1;
+}
+.modal-content {
+  position: absolute;
+  width:50%;
+  top: 50%;
+  left: 50%;
+  place-items:center;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  animation: popUp 0.5s ease-out;
+}
+  
+  @keyframes popUp {
+    0% { transform: translate(-50%, -50%) scale(0.5); opacity: 0; }
+    100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+  }
+  
+  .confetti {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    animation: fall 3s linear infinite;
+    z-index: 100000;
+  }
+  
+  @keyframes fall {
+    0% {
+      transform: translateY(-10px) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh) rotate(720deg);
+      opacity: 0;
+    }
+  }
+  .confett {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+    animation: rise 3s linear infinite;
+    z-index: 1000000;
+  }
+  
+  @keyframes rise {
+    0% {
+      transform: translateY(100vh) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-10px) rotate(720deg);
+      opacity: 0;
+    }
+  }
+.Mbtn
+{
+    margin:30px;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 30px;
+    place-self: center;
+}
+.bt{
+    place-self: center;
+    display: sticky;
+}
